@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bubble Chart Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <input id="x-value" type="number" placeholder="X Value">
+        <input id="y-value" type="number" placeholder="Y Value">
+        <input id="r-value" type="number" placeholder="Radius">
+        <button onclick="addData(myChart)">Add Data</button>
+        <button onclick="removeData(myChart)">Remove Data</button>
+        <button onclick="saveCanvas()">Save Chart</button>
+    </div>
+    <canvas id="myChart"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>

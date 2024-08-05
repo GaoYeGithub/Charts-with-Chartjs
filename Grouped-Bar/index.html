@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chart Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div id="Dataset-1">
+            <h3>Dataset 1</h3>
+            <input id="data1" type="number" placeholder="Data">
+            <input id="label1" type="text" placeholder="Data's Label">
+            <button onclick="addData(myChart, 'dataset1')">Add to Dataset 1</button>
+            <button onclick="removeData(myChart, 'dataset1')">Remove from Dataset 1</button>
+        </div>
+        <div id="Dataset-2">
+            <h3>Dataset 2</h3>
+            <input id="data2" type="number" placeholder="Data">
+            <input id="label2" type="text" placeholder="Data's Label">
+            <button onclick="addData(myChart, 'dataset2')">Add to Dataset 2</button>
+            <button onclick="removeData(myChart, 'dataset2')">Remove from Dataset 2</button>
+        </div>
+        <button onclick="saveCanvas()">Save Chart</button>
+    </div>
+    <canvas id="myChart"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
